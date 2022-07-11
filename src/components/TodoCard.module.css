@@ -1,0 +1,75 @@
+.todoCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    background: var(--gray-400);
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+}
+
+.todoCard+.todoCard {
+    margin-top: 0.75rem;
+}
+
+.todoCard p {
+    width: 100%;
+    transition: color 0.2s;
+}
+
+.todoCard .buttonOpenTodo {
+    box-sizing: border-box;
+    height: 24px;
+    width: 26px;
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid var(--blue-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.todoCard .buttonOpenTodo:hover {
+    cursor: pointer;
+    border: 2px solid var(--blue-600);
+    background-color: var(--blue-600-transparent);
+}
+
+.todoCard .buttonClosedTodo {
+    box-sizing: border-box;
+    height: 24px;
+    width: 26px;
+    border: none;
+    background: var(--purple-600);
+    color: var(--gray-100);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s;
+}
+
+.todoCard .buttonClosedTodo:hover {
+    cursor: pointer;
+    background: var(--purple-400);
+}
+
+.doneTodoText {
+    text-decoration: line-through;
+    color: var(--gray-300)
+}
+
+.deleteButton {
+    border: none;
+    background: transparent;
+    color: var(--gray-300);
+    transition: background-color 0.1s;
+}
+
+.deleteButton:hover {
+    color: var(--red-400);
+    border-radius: 4px;
+    cursor: pointer;
+}
